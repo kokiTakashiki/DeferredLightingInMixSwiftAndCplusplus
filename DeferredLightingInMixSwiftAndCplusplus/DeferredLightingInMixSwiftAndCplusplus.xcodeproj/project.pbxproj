@@ -15,8 +15,8 @@
 		9ABF615A2AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF61592AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusUITests.swift */; };
 		9ABF615C2AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF615B2AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusUITestsLaunchTests.swift */; };
 		9ABF61702AE521D400C6748D /* Fibonacci.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ABF616F2AE521D400C6748D /* Fibonacci.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9ABF61732AE521D400C6748D /* Fibonacci.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABF616D2AE521D400C6748D /* Fibonacci.framework */; platformFilters = (macos, ); };
-		9ABF61742AE521D400C6748D /* Fibonacci.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABF616D2AE521D400C6748D /* Fibonacci.framework */; platformFilters = (macos, ); settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9ABF61732AE521D400C6748D /* Fibonacci.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABF616D2AE521D400C6748D /* Fibonacci.framework */; };
+		9ABF61742AE521D400C6748D /* Fibonacci.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABF616D2AE521D400C6748D /* Fibonacci.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9ABF617C2AE5220000C6748D /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF61792AE5220000C6748D /* Fibonacci.swift */; };
 		9ABF617D2AE5220000C6748D /* FibonacciCplusplus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF617A2AE5220000C6748D /* FibonacciCplusplus.cpp */; };
 		9ABF617E2AE5220000C6748D /* FibonacciCplusplus.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9ABF617B2AE5220000C6748D /* FibonacciCplusplus.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -402,9 +402,6 @@
 		};
 		9ABF61722AE521D400C6748D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			platformFilters = (
-				macos,
-			);
 			target = 9ABF616C2AE521D400C6748D /* Fibonacci */;
 			targetProxy = 9ABF61712AE521D400C6748D /* PBXContainerItemProxy */;
 		};
@@ -733,12 +730,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -776,11 +774,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};

@@ -6,11 +6,7 @@
 //
 
 import SwiftUI
-#if os(iOS)
-
-#else
 import Fibonacci
-#endif
 
 struct ContentView: View {
     var body: some View {
@@ -26,11 +22,7 @@ struct ContentView: View {
 }
 
 func fibonacci(_ value: Double) -> Double {
-#if os(iOS)
-    return 0.0
-#else
     return FibonacciCalculator(printInvocation: true).fibonacci(value)
-#endif
 }
 
 #Preview {
