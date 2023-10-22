@@ -14,6 +14,12 @@
 		9ABF61502AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF614F2AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusTests.swift */; };
 		9ABF615A2AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF61592AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusUITests.swift */; };
 		9ABF615C2AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF615B2AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusUITestsLaunchTests.swift */; };
+		9ABF61702AE521D400C6748D /* Fibonacci.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ABF616F2AE521D400C6748D /* Fibonacci.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ABF61732AE521D400C6748D /* Fibonacci.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABF616D2AE521D400C6748D /* Fibonacci.framework */; platformFilters = (macos, ); };
+		9ABF61742AE521D400C6748D /* Fibonacci.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABF616D2AE521D400C6748D /* Fibonacci.framework */; platformFilters = (macos, ); settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9ABF617C2AE5220000C6748D /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF61792AE5220000C6748D /* Fibonacci.swift */; };
+		9ABF617D2AE5220000C6748D /* FibonacciCplusplus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ABF617A2AE5220000C6748D /* FibonacciCplusplus.cpp */; };
+		9ABF617E2AE5220000C6748D /* FibonacciCplusplus.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9ABF617B2AE5220000C6748D /* FibonacciCplusplus.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,28 @@
 			remoteGlobalIDString = 9ABF61392AE5204500C6748D;
 			remoteInfo = DeferredLightingInMixSwiftAndCplusplus;
 		};
+		9ABF61712AE521D400C6748D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ABF61322AE5204500C6748D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ABF616C2AE521D400C6748D;
+			remoteInfo = Fibonacci;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9ABF61782AE521D500C6748D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9ABF61742AE521D400C6748D /* Fibonacci.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9ABF613A2AE5204500C6748D /* DeferredLightingInMixSwiftAndCplusplus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeferredLightingInMixSwiftAndCplusplus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +72,11 @@
 		9ABF61552AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeferredLightingInMixSwiftAndCplusplusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ABF61592AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeferredLightingInMixSwiftAndCplusplusUITests.swift; sourceTree = "<group>"; };
 		9ABF615B2AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeferredLightingInMixSwiftAndCplusplusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9ABF616D2AE521D400C6748D /* Fibonacci.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fibonacci.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ABF616F2AE521D400C6748D /* Fibonacci.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fibonacci.h; sourceTree = "<group>"; };
+		9ABF61792AE5220000C6748D /* Fibonacci.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
+		9ABF617A2AE5220000C6748D /* FibonacciCplusplus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FibonacciCplusplus.cpp; sourceTree = "<group>"; };
+		9ABF617B2AE5220000C6748D /* FibonacciCplusplus.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FibonacciCplusplus.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ABF61732AE521D400C6748D /* Fibonacci.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +102,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9ABF616A2AE521D400C6748D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +118,7 @@
 				9ABF613C2AE5204500C6748D /* DeferredLightingInMixSwiftAndCplusplus */,
 				9ABF614E2AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusTests */,
 				9ABF61582AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusUITests */,
+				9ABF616E2AE521D400C6748D /* Fibonacci */,
 				9ABF613B2AE5204500C6748D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +129,7 @@
 				9ABF613A2AE5204500C6748D /* DeferredLightingInMixSwiftAndCplusplus.app */,
 				9ABF614B2AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusTests.xctest */,
 				9ABF61552AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusUITests.xctest */,
+				9ABF616D2AE521D400C6748D /* Fibonacci.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,7 +171,30 @@
 			path = DeferredLightingInMixSwiftAndCplusplusUITests;
 			sourceTree = "<group>";
 		};
+		9ABF616E2AE521D400C6748D /* Fibonacci */ = {
+			isa = PBXGroup;
+			children = (
+				9ABF616F2AE521D400C6748D /* Fibonacci.h */,
+				9ABF61792AE5220000C6748D /* Fibonacci.swift */,
+				9ABF617A2AE5220000C6748D /* FibonacciCplusplus.cpp */,
+				9ABF617B2AE5220000C6748D /* FibonacciCplusplus.hpp */,
+			);
+			path = Fibonacci;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9ABF61682AE521D400C6748D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ABF61702AE521D400C6748D /* Fibonacci.h in Headers */,
+				9ABF617E2AE5220000C6748D /* FibonacciCplusplus.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		9ABF61392AE5204500C6748D /* DeferredLightingInMixSwiftAndCplusplus */ = {
@@ -139,10 +204,12 @@
 				9ABF61362AE5204500C6748D /* Sources */,
 				9ABF61372AE5204500C6748D /* Frameworks */,
 				9ABF61382AE5204500C6748D /* Resources */,
+				9ABF61782AE521D500C6748D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9ABF61722AE521D400C6748D /* PBXTargetDependency */,
 			);
 			name = DeferredLightingInMixSwiftAndCplusplus;
 			productName = DeferredLightingInMixSwiftAndCplusplus;
@@ -185,6 +252,24 @@
 			productReference = 9ABF61552AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9ABF616C2AE521D400C6748D /* Fibonacci */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ABF61752AE521D500C6748D /* Build configuration list for PBXNativeTarget "Fibonacci" */;
+			buildPhases = (
+				9ABF61682AE521D400C6748D /* Headers */,
+				9ABF61692AE521D400C6748D /* Sources */,
+				9ABF616A2AE521D400C6748D /* Frameworks */,
+				9ABF616B2AE521D400C6748D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fibonacci;
+			productName = Fibonacci;
+			productReference = 9ABF616D2AE521D400C6748D /* Fibonacci.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +291,10 @@
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = 9ABF61392AE5204500C6748D;
 					};
+					9ABF616C2AE521D400C6748D = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
 				};
 			};
 			buildConfigurationList = 9ABF61352AE5204500C6748D /* Build configuration list for PBXProject "DeferredLightingInMixSwiftAndCplusplus" */;
@@ -224,6 +313,7 @@
 				9ABF61392AE5204500C6748D /* DeferredLightingInMixSwiftAndCplusplus */,
 				9ABF614A2AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusTests */,
 				9ABF61542AE5204600C6748D /* DeferredLightingInMixSwiftAndCplusplusUITests */,
+				9ABF616C2AE521D400C6748D /* Fibonacci */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +336,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9ABF61532AE5204600C6748D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ABF616B2AE521D400C6748D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,6 +378,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9ABF61692AE521D400C6748D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ABF617D2AE5220000C6748D /* FibonacciCplusplus.cpp in Sources */,
+				9ABF617C2AE5220000C6748D /* Fibonacci.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +399,14 @@
 			isa = PBXTargetDependency;
 			target = 9ABF61392AE5204500C6748D /* DeferredLightingInMixSwiftAndCplusplus */;
 			targetProxy = 9ABF61562AE5204600C6748D /* PBXContainerItemProxy */;
+		};
+		9ABF61722AE521D400C6748D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilters = (
+				macos,
+			);
+			target = 9ABF616C2AE521D400C6748D /* Fibonacci */;
+			targetProxy = 9ABF61712AE521D400C6748D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
